@@ -1,8 +1,10 @@
+require('dotenv').config();
 const assert = require('assert');
 const ganache = require('ganache-cli');
 const Web3 = require('web3');
 const web3 = new Web3('ws://127.0.0.1:7545');
 const {abi, byteCode} = require('../compile');
+
 
 const initial_string = 'Hi there!';
 
