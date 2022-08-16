@@ -29,5 +29,11 @@ describe('Inbox',()=>{
         const message = await inboxContract.methods.getMessage().call();
         assert.equal(message,initial_string);
     });
+    it('can change the message',async ()=>{
+        let setMessageVal = 'bye';
+        await inboxContract.methods.setMessage(setMessageVal).send({ from : accounts[0]});
+        const message = await inboxContract.methods.getMessage().call();
+        assert.equal(message,setMessageVal);
+    });
      
 });
