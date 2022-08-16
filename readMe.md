@@ -11,7 +11,6 @@ Inbox smart contract is a advance Hello World version of solidity smart contract
 - Compiling smart contract using solc library to generate abi & bytecode.
 - Deploying smart contract on ganache to execute test cases written using Mocha.
 - Deploying smart contract on Infura platform using trufflle, metamask & Node JS
-- ✨Magic ✨
 
 
 Inbox Smart Contract uses a number of open source projects to work properly:
